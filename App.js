@@ -1,6 +1,6 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import React, { Component } from "react";
+import { StyleSheet, Text, View, TextInput, Animated } from "react-native";
+import Weather from './components/Weather';
 export default class App extends React.Component {
   doIt = () => {
     console.log("Hello from Console")
@@ -8,7 +8,7 @@ export default class App extends React.Component {
   render(){
     return (
     <View style={styles.container}>
-      <Text onPress={this.doIt}>Hello World</Text>
+      <Weather zipCode="90110"/>
     </View>
   );
   }
