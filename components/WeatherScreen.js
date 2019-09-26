@@ -8,7 +8,7 @@ export default class WeatherScreen extends React.Component{
 
     render(){
         return(
-            <Weather zipCode="77000"/>
+            <Weather zipCode="40000"/>
         )
     };
 }

@@ -7,12 +7,15 @@ import ZipCodeScreen from "./components/ZipCodeScreen";
 import WeatherScreen from "./components/WeatherScreen";
 
 
+const RootStack = createStackNavigator(
+  {
+    Weather: { screen: WeatherScreen },
+    ZipCode: { screen: ZipCodeScreen },
+  },
+  {
+   initialRouteName: 'Weather',
+  }
+);
 
-const RootStack = createStackNavigator({
-  Weather: WeatherScreen,
-  ZipCode: ZipCodeScreen,
-}, {
-  initialRouteName: 'ZipCode',
-})
-
-export default createAppContainer(RootStack);
+const App = createAppContainer(RootStack);
+export default App;
