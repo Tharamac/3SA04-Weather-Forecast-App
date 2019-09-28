@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
       paddingRight: 10,
       paddingLeft: 10
     ,marginBottom: 2
-    ,backgroundColor:'aqua'
+    ,backgroundColor:'white'
     },
     zipPlace:{
         flex: 2,
