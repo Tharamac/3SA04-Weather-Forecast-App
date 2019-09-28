@@ -14,6 +14,7 @@ const RootStack = createStackNavigator(
   },
   {
    initialRouteName: 'Weather',
+   initialRouteParams: {zipCode: '90110'},
   }
 );
 

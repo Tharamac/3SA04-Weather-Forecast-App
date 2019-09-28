@@ -48,7 +48,7 @@ export default class ZipCodeScreen extends React.Component {
 
 const styles = StyleSheet.create({
     zipList:{
-        flexDirection:'colomn',
+        flexDirection:'column',
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -56,16 +56,20 @@ const styles = StyleSheet.create({
      flexDirection:'row',
       alignItems: 'flex-start',
       justifyContent: 'space-between',
+      paddingRight: 10,
+      paddingLeft: 10
+    ,marginBottom: 2
+    ,backgroundColor:'aqua'
     },
     zipPlace:{
         flex: 2,
-        fontSize:30,
-        alignSelf: 'stretch',
+        fontSize:15,
+        // alignSelf: 'stretch',
     },
     zipCode:{
         flex: 1,
-        fontSize:30,
-        alignSelf: 'stretch',
+        fontSize:15,
+        // alignSelf: 'stretch',
     }
 
   });
